@@ -53,7 +53,8 @@ if event== "Iesniegt":
     epasts=values["epasts"]
     
     # kā saglābāt šos datus, datu bāzē
-    
+    cursor.execute("INSERT INTO lietotaji (vards, uzvards, email) VALUES (?,?,?)", (vards,uzvards,epasts))
+
 
 
 
