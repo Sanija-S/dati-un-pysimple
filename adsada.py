@@ -26,7 +26,7 @@ layout=[
    [sg.T("Vards"), sg.InputText(key="Vards")], 
    [sg.T("uzVards"), sg.InputText(key="uzVards")], 
    [sg.T("epasts"), sg.InputText(key="epasts")], 
-   [sg.Button("iesniegt"), sg.BUtton("iziet")]
+   [sg.Button("Iesniegt"), sg.Button("Iziet")]
 
 
 ]
@@ -35,9 +35,15 @@ logs=sg.Window("Datu bāze", layout, resizable=True)
 
 
 while True: 
-    event, values=logs.read
-    if event ==sg.WIN_CLOSED:
+    event,values=logs.read()
+    if event ==sg.WIN_CLOSED or event=="Iziet":
         break
+""" or...
+while True: 
+    event,values=logs.read()
+    if event is None or event=="Iziet":
+        break
+"""
 
 
 
