@@ -23,9 +23,9 @@ conn.commit()
 # izveidojam loga izkārtojumu- lai var redzēt GUI logā
 
 layout=[
-   [sg.T("Vards"), sg.InputText(key="Vards")], 
-   [sg.T("uzVards"), sg.InputText(key="uzVards")], 
-   [sg.T("epasts"), sg.InputText(key="epasts")], 
+   [sg.T("Vards"), sg.InputText(key="vards")], 
+   [sg.T("Uzvards"), sg.InputText(key="uzvards")], 
+   [sg.T("Epasts"), sg.InputText(key="epasts")], 
    [sg.Button("Iesniegt"), sg.Button("Iziet")]
 
 
@@ -46,6 +46,14 @@ while True:
 """
 
 # jāapskata notikums- poga :"iesniegt"
+if event== "Iesniegt":
+    # ir jāsavāc visi dati
+    vards=values["vards"]
+    uzvards=values["uzvards"]
+    epasts=values["epasts"]
+    
+    # kā saglābāt šos datus, datu bāzē
+    
 
 
 
