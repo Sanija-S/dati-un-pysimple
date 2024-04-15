@@ -45,7 +45,7 @@ while True:
         break
 """
 
-
+# jāapskata notikums- poga :"iesniegt"
 
 
 
