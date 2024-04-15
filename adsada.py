@@ -7,16 +7,13 @@ cursor=conn.cursor() # objekts kas stradā savienojuma, ko mes izveidojam
 
 #izveidojam tabulu, ja tādas nav!!
 
-cursor.execute(""" CREATE TABLE IF NOT EXISTS lietotāji(
+cursor.execute(""" CREATE TABLE IF NOT EXISTS lietotaji(
                ID INTEGER PRIMARY KEY ,
                vards TEXT,
                uzvards TEXT,
                epasts TEXT
                
 )""") # ar 3 ķepiņām """ vai ''' - sitais ir sq valodā
-
-
-
 
 conn.commit()
 
@@ -27,7 +24,6 @@ layout=[
    [sg.T("Uzvards"), sg.InputText(key="uzvards")], 
    [sg.T("Epasts"), sg.InputText(key="epasts")], 
    [sg.Button("Iesniegt"), sg.Button("Iziet")]
-
 
 ]
 
