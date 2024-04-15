@@ -61,3 +61,4 @@ if event== "Iesniegt":
 
 
 conn.close()
+# vel japastrada ar dzesanu
