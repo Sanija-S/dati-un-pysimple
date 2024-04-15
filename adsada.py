@@ -7,7 +7,13 @@ cursor=conn.cursor() # objekts kas stradā savienojuma, ko mes izveidojam
 
 #izveidojam tabulu, ja tādas nav!!
 
-cursor.execute(""" CREATE TABLE IF NOT EXISTS lietotāji""") # ar 3 ķepiņām """ vai ''' - sitais ir sq valodā
+cursor.execute(""" CREATE TABLE IF NOT EXISTS lietotāji(
+               ID INTEGER PRIMARY KEY ,
+               vards TEXT,
+               uzvards TEXT,
+               epasts TEXT
+               
+)""") # ar 3 ķepiņām """ vai ''' - sitais ir sq valodā
 
 
 
